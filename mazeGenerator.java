@@ -119,12 +119,15 @@ public class mazeGenerator {
 			}
 	}
 	// makes the maze with all F's, other than starting and ending points
-	public void iniMaze(int x) 
+	private void iniMaze(int x) 
 	{
 		maze[0] = 11;
 		maze[x] = 14;
 		for(int i = 1; i < x; i++)
 				maze[i] = 15;
+	}
+	public int[] getMazeArray() {
+		return maze;
 	}
 	// to string method of maze
 	public String toString()
